@@ -16,6 +16,7 @@ services:
     
 
   backend:
+    image: 2300030813/docker-backend:latest
     container_name: springboot
     build:
       context: ./PATIENTAPI-SPRINGBOOT
@@ -29,6 +30,7 @@ services:
       - springboot-mysql-net
 
   frontend:
+    image: 2300030813/docker-frontend:latest
     container_name: react
     build:
       context: ./PATIENTAPI-REACT
