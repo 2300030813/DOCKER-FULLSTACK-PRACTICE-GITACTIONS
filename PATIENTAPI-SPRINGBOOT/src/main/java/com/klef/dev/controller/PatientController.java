@@ -23,6 +23,11 @@ public class PatientController {
         return "Patient Management API is running...";
     }
 
+    @GetMapping("/docker")
+    public String docker() {
+        return "Docker Full Stack Deployment with Git Actions...";
+    }
+
     @PostMapping("/add")
     public ResponseEntity<Patient> addPatient(@RequestBody Patient patient) {
         Patient savedPatient = patientService.addPatient(patient);
