@@ -3,7 +3,7 @@ services:
     container_name: mysql-db
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: devops
+      MYSQL_ROOT_PASSWORD: Dedeepya@02
       MYSQL_DATABASE: patientdb2
       # MYSQL_USER: klu
       # MYSQL_PASSWORD: klu
