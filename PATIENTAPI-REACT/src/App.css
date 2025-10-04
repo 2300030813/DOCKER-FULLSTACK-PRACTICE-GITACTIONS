@@ -1,0 +1,143 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5faff; /* soft blue-white background */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #0077b6; /* deep ocean blue */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.form input,
+.form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #0077b6;
+  font-size: 1.1em;
+  min-width: 200px;
+}
+
+.form button {
+  border-radius: 10px;
+  border: none;
+  padding: 14px 24px; /* bigger button */
+  font-size: 1.1em;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00b894, #0077b6); /* green-blue gradient */
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 119, 182, 0.3);
+}
+
+/* Message styling */
+.message {
+  font-size: 1.1em;
+  color: #0077b6;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+/* Patient list styling */
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.patient-item {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #cce7ff;
+  padding: 1.2em;
+  border-radius: 12px;
+  background: white;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0, 119, 182, 0.15);
+  transition: transform 0.2s;
+}
+
+.patient-item:hover {
+  transform: translateY(-3px);
+}
+
+.patient-item h3 {
+  margin: 0;
+  color: #0077b6;
+}
+
+.patient-item p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Buttons inside patient item */
+.buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Edit button */
+button:not(.delete) {
+  background-color: #00b894; /* green */
+  color: white;
+}
+
+button:not(.delete):hover {
+  background-color: #009874;
+}
+
+/* Delete button */
+button.delete {
+  background-color: #e63946; /* red */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c71c2c;
+}
+
+/* ✅ Optional: Responsive design */
+@media (max-width: 600px) {
+  .form input,
+  .form select {
+    min-width: 100%;
+  }
+  .patient-item {
+    max-width: 100%;
+  }
+}
